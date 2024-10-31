@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaisyUi test</title>
+    <!-- daisyUI + Tailwindcss CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1>I am using daisyUI</h1>
+    <button class="btn">Click me</button>
+    <button class="btn btn-primary">Click me</button>
+
+
+    <br> <br> <br>
+
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+<input type="checkbox" value="synthwave" class="toggle theme-controller" />
+
+<br> <br>
+
+<div class="collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" checked="checked" />
+  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-content">
+    <p>hello</p>
+  </div>
+</div>
+<div class="collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" />
+  <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div class="collapse-content">
+    <p>hello</p>
+  </div>
+</div>
+
+
+
+<br> <br>
+
+
+<div class="avatar">
+  <div class="w-24 rounded-xl">
+    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+  </div>
+</div>
+<div class="avatar">
+  <div class="w-24 rounded-full">
+    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+  </div>
+</div>
+
+<br> <br>
+
+
+<div class="card bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">
+      Shoes!
+      <div class="badge badge-secondary">NEW</div>
+    </h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div class="card-actions justify-end">
+      <div class="badge badge-outline">Fashion</div>
+      <div class="badge badge-outline">Products</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
